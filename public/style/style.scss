@@ -86,6 +86,8 @@ body {
 
     .example {
         float: left;
+        width: 30%;
+        margin-left: 10px;
     }
 
     &::after {
