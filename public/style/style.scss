@@ -1,0 +1,96 @@
+@import "./variables.scss";
+
+* {
+
+}
+
+body {
+    background-color: rgba(30, 4, 88, 0.938);
+}
+
+.container {
+    width: 100%;
+    height: fit-content;
+
+    h1 {
+        text-align: center;
+        font-style: $textFont;
+        letter-spacing: 2px;
+        color: $textColor;
+        margin-top: 10px;
+        text-shadow: 2px 6px 80px rgb(228, 221, 182);
+        font-size: 8vh;
+    }
+}
+
+.user-control {
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    form {
+        box-shadow: 4px 8px 30px black;
+        background-color: black;
+        height: 30vh;
+        width: 25%;
+        text-align: center;
+
+        .form-control {
+            display: block;
+            width: 100%;
+            text-align: center;
+
+            label {
+                font-size: 24px;
+                margin: 10px 0px;
+                display: block;
+                color: white;
+            }
+
+            input {
+                width: 90%;
+                margin: 5vh 0;
+                font-size: 20px;
+                transition: 0.5s;
+
+                &:focus {
+                    font-size: 24px;
+                    border: 2px solid gray;
+                }
+            }
+        }
+
+        input[type="submit"] {
+            margin: 4vh 0;
+            padding: 5px;
+            text-transform: uppercase;
+            font-size: 20px;
+            border-radius: 15px;
+            background-color: pink;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgb(255, 153, 170);
+            }
+        }
+        
+    }
+}
+
+.game-collection {
+    height: 25vh;
+    max-width: 100%;
+    margin: 0 auto;
+
+    .example {
+        float: left;
+    }
+
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
