@@ -1,5 +1,7 @@
 @import "./variables.scss";
 
+@import "./functions.scss";
+
 * {
 
 }
@@ -83,11 +85,20 @@ body {
     height: 25vh;
     max-width: 100%;
     margin: 0 auto;
+    align-items: center;
 
     .example {
         float: left;
         width: 30%;
         margin-left: 10px;
+    }
+
+    .p1 {
+        @include backgroundImage('../img/friends.jpg');
+    }
+    
+    .p2 {
+        @include backgroundImage('../img/alone.webp')
     }
 
     &::after {
