@@ -1,9 +1,16 @@
 @mixin backgroundImage($url) {
     position: relative;
-    height: 25vh;
+    min-height: 25vh;
     background-image: url($url);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    opacity: 0.7;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.7s;
+
+    &:hover {
+        opacity: 0.8;
+        width: 45%;
+    }
 }
