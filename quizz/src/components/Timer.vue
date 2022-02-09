@@ -92,7 +92,7 @@ export default {
 /* Sets the containers height and width */
 .base-timer {
   position: absolute;
-  top: calc(5vh - 25px);
+  top: calc(4vh - 25px);
   left: 5%;
   width: 50px;
   height: 50px;
