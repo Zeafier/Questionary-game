@@ -1,12 +1,12 @@
-const API = "https://api.trivia.willfry.co.uk/questions?limit=20";
+const API = "api/questions?";
 import axios from 'axios';
 
 class userService {
     questions(type) {
         if (type === "all") {
-            return axios.get(API);
+            return axios.get(`${API}limit=20`);
         } else {
-            return axios.get(`https://api.trivia.willfry.co.uk/questions?categories=${type}&limit=20`);
+            return axios.get(`${API}categories=${type}&limit=20`);
         }
     }
 }

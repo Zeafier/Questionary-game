@@ -5,5 +5,9 @@ module.exports = {
                 implementation: require('sass')
             }
         }
+    },
+    // options...
+    devServer: {
+        proxy: 'https://the-trivia-api.com/',
     }
 }
